@@ -18,6 +18,7 @@ This is an application that will allow users to pitch their ideas. You will have
 .pip
 ### Clone the Repo
 .git clone https://github.com/marykamau/Pitch-world
+
 .Initialize git and add the remote repository
 .git init
 .git remote add origin <your-repository-url>

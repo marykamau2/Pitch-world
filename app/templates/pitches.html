@@ -1,0 +1,49 @@
+<!-- 
+{%extends 'base.html'%}
+{%block content %}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{%block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename= 'css/styles.css')}}">
+{%endblock %}
+
+<div class="container">
+    <div class="card">
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <a class="btn btn-info" type="button" href="/newpitch">Create new pitch</a>
+              
+            </form>
+          </nav>
+        <h3>Welcome , view pitches here</h3>
+        <div class="card">
+            <ul type=none>
+                {% for pitch in pitches%}
+                <div class="card-body bg-secondary">
+                    <li>
+                        <h3>{{pitch.title}}</h3>
+                    </li>
+                    <h6><b>Category: </b>{{pitch.category}}</h6>
+                    <p><b>idea: </b>{{pitch.pitch_idea}}</p>
+                    <p> <b>posted at:</b> <em>{{pitch.posted}}</em></p>
+                    <b>Comments: </b>
+                 <ul>
+                    {%for comment in comments %}
+                    <li>
+                        {{comment.comment}}
+                    </li>
+                    {%endfor %}
+                 </ul>
+
+                    {{wtf.quick_form(commentform)}}
+                    <hr>
+
+                </div>
+                {% endfor %}
+            </ul>
+
+
+        </div>
+    </div>
+    {% endblock %} -->

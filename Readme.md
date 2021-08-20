@@ -13,26 +13,26 @@ This is an application that will allow users to pitch their ideas. You will have
         .Access the live site using the local host provided
         .Getting started
 ### Prerequisites
-        .python3.8
-        .virtual environment
-        .pip
+        .Python3.8
+        .Virtual environment
+        .Pip
 ### Clone the Repo
-        .git clone https://github.com/marykamau/Pitch-world
+        .Git clone https://github.com/marykamau2/Pitch-world
         .Initialize git and add the remote repository
-        .git init
-        .git remote add origin <your-repository-url>
+        .Git init
+        .Git remote add origin <your-repository-url>
         .Create and activate the virtual environment
-        .python3.8-venv virtual
-        .source virtual/bin/activate
+        .Python3.8-venv virtual
+        .Source virtual/bin/activate
         .Install dependancies
         .Install dependancies that will create an environment for the app to run ...pip install -r requirements.txt
 ### Make and run migrations
-        .python3.6 manage.py check
-        .python manage.py makemigrations news
-        .python3.6 manage.py sqlmigrate news 0001
-        .python3.6 manage.py migrate
+        .Python3.6 manage.py check
+        .Python manage.py make migrations news
+        .Python3.6 manage.py sqlmigrate news 0001
+        .Python3.6 manage.py migrate
         .Run the app
-        .python3.6 manage.py runserver
+        .Python3.6 manage.py runserver
         .Open localhost:5000
 ### Testing the Application
 python3.8 manager.py tests
@@ -45,3 +45,11 @@ python3.8 manager.py tests
         .CSS
 ### Licence
 This project is under the MIT licence
+
+
+
+
+
+
+python3.6 manage.py db migrate -m "Initial Migration"
+python3.6 manage.py db upgrade
